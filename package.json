@@ -10,6 +10,7 @@
   "dependencies": {
     "less-loader": "7.x",
     "naive-ui": "^2.33.3",
+    "vfonts": "^0.0.3",
     "vue": "^3.2.33",
     "vue-router": "4",
     "vuex": "4"
