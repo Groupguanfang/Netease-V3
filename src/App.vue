@@ -8,8 +8,8 @@ import HelloWorldVue from "./components/HelloWorld.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld: HelloWorldVue,
-  },
+    HelloWorld: HelloWorldVue
+  }
 };
 </script>
 
