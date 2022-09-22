@@ -6,7 +6,7 @@
 
 <script setup>
 import { defineComponent,h } from "vue"
-import { RouterLink } from "vue-r"
+import { RouterLink } from "vue-router";
 const menuOptions = [
   {
     label: () => h(
