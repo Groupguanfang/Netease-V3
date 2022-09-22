@@ -8,12 +8,13 @@
   </n-config-provider>
 </template>
 
-<script> darkTheme  dfrom 'naive-ui'
+<script> 
+import {darkTheme} from 'naive-ui'
 export default {
   data() {
     return {
       active: false,
-      theme: 
+      theme: dark
       placement: 'left',
     }
   },
