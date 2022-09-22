@@ -1,27 +1,25 @@
-<script>
-import { NConfigProvider } from 'naive-ui'
-import { createTheme } from 'naive-ui'
-
-export default {
-    components: { NConfigProvider },
-    setup() {
-      return {
-        darkTheme: createTheme(
-          []
-        ),
-      }
-    }
-  }
-</script>
-
 <template>
-  <n-config-provider :theme="darkTheme">
+  <n-config-provider :theme="theme">
     <router-view />
   </n-config-provider>
 </template>
 
-<style>
-  body {
-    background: black;
+<script>
+import { defineComponent, ref } from "vue";
+import { darkTheme } from "naive-ui";
+
+export default defineComponent({
+  setup() {
+    return {
+      darkTheme,
+      theme: ref(null)
+    };
   }
+});
+</script>
+
+<style>
+body {
+  background: black;
+}
 </style>
