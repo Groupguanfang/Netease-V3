@@ -5,7 +5,8 @@
 </template>
 
 <script setup>
-import { defineComponent,h } from "vue"
+import { h } from "vue";
+import { defineComponent } from "vue";
 import { RouterLink } from "vue-router";
 const menuOptions = [
   {
