@@ -1,16 +1,19 @@
-<template>
-  <n-drawer v-model:show="active" :width="100" :placement="placement">
-    <n-drawer-content title="斯通纳">
-      《斯通纳》是美国作家约翰·威廉姆斯在 1965 年出版的小说。
-    </n-drawer-content>
-  </n-drawer>
+import {}<template>
+  <n-config-provider :theme="theme">
+    <n-drawer v-model:show="active" :width="100" :placement="placement">
+      <n-drawer-content title="斯通纳">
+        《斯通纳》是美国作家约翰·威廉姆斯在 1965 年出版的小说。
+      </n-drawer-content>
+    </n-drawer>
+  </n-config-provider>
 </template>
 
-<script>
+<script> darkTheme  dfrom 'naive-ui'
 export default {
   data() {
     return {
       active: false,
+      theme: 
       placement: 'left',
     }
   },
