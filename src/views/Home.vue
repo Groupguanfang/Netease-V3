@@ -1,4 +1,4 @@
-t<template>
+<template>
 <n-config-provider :theme="darkTheme">
   <n-tabs
     :bar-width="28"

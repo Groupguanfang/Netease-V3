@@ -1,19 +1,27 @@
 <template>
   <n-config-provider :theme="theme">
-    <n-drawer v-model:show="active" :width="100" :placement="placement">
-      <n-drawer-content title="斯通纳">
-        《斯通纳》是美国作家约翰·威廉姆斯在 1965 年出版的小说。
+    <n-drawer
+      v-model:show="active"
+      :width="250"
+      :placement="placement"
+    >
+      <n-drawer-content
+        title="网易云音乐"
+      >
+        <leftMenuItem />
       </n-drawer-content>
     </n-drawer>
   </n-config-provider>
 </template>
 
-<script> darkTheme  dfrom 'naive-ui'
+<script> 
+import { darkTheme } from 'naive-ui'
+import leftMenuItem from './leftMenuItem.vue'
 export default {
   data() {
     return {
       active: false,
-      theme: 
+      theme: darkTheme,
       placement: 'left',
     }
   },
@@ -25,6 +33,7 @@ export default {
         this.active = false
       }
     }
-  }
+  },
+  components: { leftMenuItem }
 }
 </script>
