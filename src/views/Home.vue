@@ -1,4 +1,4 @@
-<template>
+t<template>
 <n-config-provider :theme="darkTheme">
   <n-tabs
     :bar-width="28"
@@ -27,7 +27,16 @@ export default {
   components: { My },
   data() {
     return {
-      darkTheme
+      darkTheme: darkTheme
+    }
+  },
+  watch: {
+    '$store.state.darkMode'() {
+      if (this.$sore.state.darkMode) {
+        this.darkTheme = darkTheme
+      } else {
+        this.darkTheme = null
+      }
     }
   }
 };

@@ -1,21 +1,23 @@
 <template>
   <n-config-provider :theme="theme">
+    <left-menu />
     <router-view />
   </n-config-provider>
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
 import { darkTheme } from "naive-ui";
+import leftMenu from "./components/leftMenu.vue";
 
-export default defineComponent({
-  setup() {
+export default {
+  data() {
     return {
       darkTheme,
-      theme: ref(null)
-    };
-  }
-});
+      theme: null
+    }
+  },
+  components: { leftMenu }
+};
 </script>
 
 <style>

@@ -1,6 +1,8 @@
 import { createStore } from "vuex";
 export default createStore({
-  state: {},
+  state: {
+    darkMode: true
+  },
   mutations: {},
   actions: {},
   modules: {}
