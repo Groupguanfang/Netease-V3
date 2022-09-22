@@ -1,11 +1,11 @@
 <template>
-  <div class="app">
-    <n-config-provider ref="containerRef" :theme="theme">
+  <div class="app" ref="containerRef">
+    <n-config-provider :theme="theme">
       <left-menu />
       <router-view />
     </n-config-provider>
     <n-affix :bottom="120" :listen-to="() => containerRef">
-      <n-button size="large" circle strong secondary type="primary">
+      <n-button @click="openMenu()" size="large" circle strong type="primary">
         <n-icon>
           <Menu/>
         </n-icon>
@@ -24,6 +24,11 @@ export default {
     return {
       darkTheme,
       theme: null
+    }
+  },
+  methods: {
+    openMenu() {
+      this.$store.commit('updateMenu')
     }
   },
   components: { leftMenu,Menu }

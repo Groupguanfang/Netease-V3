@@ -4,7 +4,11 @@ export default createStore({
     darkMode: true,
     menuOpen: false
   },
-  mutations: {},
+  mutations: {
+    updateMenu(state) {
+      state.menuOpen = !state.menuOpen
+    }
+  },
   actions: {},
   modules: {}
 });
