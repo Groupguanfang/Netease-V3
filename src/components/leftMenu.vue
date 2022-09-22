@@ -1,4 +1,4 @@
-import {}<template>
+<template>
   <n-config-provider :theme="theme">
     <n-drawer v-model:show="active" :width="100" :placement="placement">
       <n-drawer-content title="斯通纳">
