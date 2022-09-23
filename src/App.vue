@@ -4,7 +4,7 @@
       <left-menu />
       <router-view />
     </n-config-provider>
-    <n-affix position="fixed" :listen-to="() => containerRef">
+    <n-affix :listen-to="() => containerRef">
       <n-button @click="openMenu()" size="large" circle strong type="primary">
         <n-icon>
           <Menu/>
